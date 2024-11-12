@@ -1,0 +1,64 @@
+/* Background styling with a GIF */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .welcome-container {
+    /* Full page height and width */
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;  /* Aligns content to the left */
+    align-items: center;
+    background-image: url('https://i.pinimg.com/originals/a3/0c/00/a30c002d42e53a5c07783fdea4b5c9ff.gif'); /* Add your GIF URL */
+    background-size: cover; /* Ensures the entire GIF is visible */
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the GIF vertically and horizontally */
+  }
+  
+  .welcome-card {
+    /* Glassmorphism effect for the card */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    width: 500px; /* Square card width */
+    height: 500px; /* Square card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    text-align: center;
+  }
+  
+  .welcome-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #121212; /* Text color to contrast with background */
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 50px; /* Space between buttons */
+  }
+   
+  .user-btn, .admin-btn {
+    width: 100px; /* Set the button width to 200px or your desired length */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 16px;
+    border: none;
+    border-radius: 50px; /* Optional: Keep rounded corners if desired */
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .user-btn:hover, .admin-btn:hover {
+    background-color: #4CAF50; /* Green color on hover */
+    color: white;
+  }
+  

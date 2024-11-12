@@ -1,0 +1,81 @@
+/* Full-page background GIF for the signup page */
+.signup-page {
+    background-image: url("https://i.pinimg.com/originals/d4/26/94/d426942071a509a11f0b114edc6b4368.gif"); /* Add the GIF URL here */
+    background-size: cover; /* Ensure the image or GIF covers the entire page */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center center; /* Center the image or GIF */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Styling for the card component */
+.card {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent card background with glassmorphism effect */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    padding: 30px;
+    width: 600px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form control and other form elements styling */
+.form-control {
+    background-color: #ffffff; /* White background for the text fields */
+    color: #121212; /* Dark text color */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between fields */
+}
+
+.form-control:focus {
+    color: #121212;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+    color: #f1f1f1; /* Light text color for contrast against dark background */
+    font-weight: bold;
+}
+
+/* Adjust button styles */
+.btn-success, .btn-primary {
+    border: none;
+    transition: transform 0.2s ease;
+    background-color: #34b4c0; /* Darker blue button color */
+}
+
+.btn-success:hover, .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #f1f1f1; /* Light color for the card title */
+    font-weight: bold;
+    font-size: 24px; /* Font size for the card title */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional: Media Query for mobile responsiveness */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 20px; /* Adjust the title size for smaller screens */
+    }
+}

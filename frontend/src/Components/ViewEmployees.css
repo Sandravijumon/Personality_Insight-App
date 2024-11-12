@@ -1,0 +1,95 @@
+/* Container for the whole page */
+.view-employees-container {
+    padding: 20px;
+  }
+  
+  /* Logout Button */
+  .logout-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .logout-button {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #e68900;
+  }
+  
+  /* Table Heading */
+  .table-heading {
+    text-align: center;
+    color: rgb(20, 17, 17);
+    margin-bottom: 20px;
+  }
+  
+  /* Table container for styling */
+  .table-container {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+  
+  /* Styling the table */
+  table.table-dark {
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: 1px solid white;
+  }
+  
+  table.table-dark th,
+  table.table-dark td {
+    color: white;
+    padding: 10px;
+  }
+  
+  table.table-dark th {
+    background-color: #333;
+  }
+  
+  table.table-dark tbody tr:nth-child(even) {
+    background-color: #444;
+  }
+  
+  table.table-dark tbody tr:hover {
+    background-color: #555;
+  }
+  
+  /* Styling the Delete Button */
+  .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+  }
+  
+  /* Search bar styles */
+.search-bar-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .search-bar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Rest of your CSS from the previous example */
+  

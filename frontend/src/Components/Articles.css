@@ -1,0 +1,61 @@
+/* Articles Section */
+.articles-section {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    width: 100%; /* Make sure the articles section takes up the full width */
+}
+
+.articles-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Flexbox layout for horizontal alignment */
+.articles-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space between the cards */
+    flex-wrap: wrap; /* Allow cards to wrap if they don’t fit */
+    gap: 20px; /* Space between the cards */
+    width: 100%; /* Make sure container takes up the full width */
+}
+
+.article-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex-basis: 30%; /* Each card will take up about 30% of the available space */
+    max-width: 300px; /* Ensure cards don’t grow beyond 300px */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.article-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.article-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .articles-container {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
+    }
+
+    .take-test-button {
+        width: 100%; /* Ensure the button takes up full width on small screens */
+        max-width: 400px;
+    }
+
+    .slider-image {
+        height: 300px; /* Adjust image height for smaller screens */
+    }
+}

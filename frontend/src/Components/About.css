@@ -1,0 +1,90 @@
+/* About Page Styles */
+.about-page {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Ensure the content doesn't overflow */
+}
+
+.about-page .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/enabled/474x/80/89/4d/80894df01ada59bf5de307d54e324c68.jpg'); /* Background image for the page */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place the background behind the content */
+}
+
+.about-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent dark overlay */
+    z-index: -1;
+}
+
+.about-page .about-content {
+    z-index: 1; /* Ensures the content appears above the background */
+    max-width: 800px;
+    padding: 20px;
+}
+
+.about-page .about-heading {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color:rgb(9, 27, 27);
+}
+
+.about-page .about-heading1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:rgb(195, 206, 206);
+}
+
+.about-page .gif-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.about-page .gif-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-page .about-paragraph {
+    font-size: 1.5rem;
+    color: black;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Adds slight transparency to the text background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-page .about-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-page .gif-image {
+        max-width: 250px;
+    }
+
+    .about-page .about-paragraph {
+        font-size: 1rem;
+    }
+}
